@@ -1,0 +1,164 @@
+
+
+.subscribe_container {
+    display: flex;
+    justify-content: center;
+}
+
+.subscribe_img {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 158px;
+    margin-right: 40px;
+    display: none;
+}
+.subscribe_wrapper {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+ 
+}
+
+.subscribe_title {
+    color: #100E0E;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.subscribe_text{
+    color:  #585656;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.subscribe_discount {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #F7355D 0.3%, #9747FF 101.33%);
+    max-width: 300px;
+    width: 100%;
+}
+
+.subscribe_substitle {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+.discount_text {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.subscribe_input {
+    padding: 13px 24px;
+    border-radius: 8px;
+    border: 1px solid  #DBDBDB;
+    background: #FFF;
+}
+.subscribe_number {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    justify-content: center;
+    width: 100%;
+}
+
+.subscribe_btn {
+    margin-top: 8px;
+    color:  #585656;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    padding: 16px;
+    border-radius: 8px;
+    background:  #E7E7E7;
+}
+
+@media screen and (min-width:768px) {
+
+    .subscribe_img {
+        display: inline-block;
+    }
+    .subscribe_number {
+        flex-direction: row;
+    }
+
+    .subscribe_btn {
+        padding: 13px ;
+        margin-top: 0px;
+        margin-left: 5px;
+    }
+
+    .subscribe_discount {
+        max-width: 250px;
+    }
+
+    .subscribe_wrapper{
+        align-items:start;
+        max-width: 300px;
+    }
+    .subscribe_input {
+        margin-left: 15px;
+    }
+
+ 
+}
+
+@media screen and (min-width:1200px) {
+    .subscribe {
+        background:  #F9F9F9;
+    }
+
+    .subscribe_img {
+        width: 484px;
+    }
+
+    .subscribe_title {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .subscribe_text {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .subscribe_wrapper{ 
+        max-width: 454px;
+    }
+
+    .discount_wrapper {
+        margin-top: 25px;
+        border-radius: 8px;
+        background: linear-gradient(90deg, #F7355D 0.3%, #9747FF 101.33%);
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 25px;
+    }
+
+    .subscribe_substitle {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .subscribe_discount {
+        background:transparent;
+        padding-left: 0px;
+    }
+}

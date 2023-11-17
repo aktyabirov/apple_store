@@ -1,0 +1,215 @@
+
+.product_list {
+    padding-top: 16px;
+    padding-bottom: 24px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    text-align: center;
+    row-gap: 24px;
+
+    @media screen and (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (min-width:1200px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+}
+
+.product_item {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05);
+    max-width: 280px;
+    padding-bottom: 16px;
+
+    @media screen and (min-width:1200px) {
+        
+    }
+}
+
+.user_feedback {
+    display: flex;
+    justify-content: space-between;
+    max-width: 260px;
+    padding-bottom:16px ;
+    padding-top: 16px;
+    gap: 8px;
+}
+
+.feedback_star {
+    height: 24px;
+    width: 120px;
+}
+
+.feedback_heart, .feedback_share {
+    height: 24px;
+    width: 24px;
+}
+
+.product_name {
+    color: #100E0E;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: normal;
+    @media screen and (min-width:1200px) {
+        display: none;
+    }
+}
+
+.product_name_top {
+    color: #100E0E;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: normal;
+    padding-bottom: 10px;
+
+    @media screen and (min-width:1200px) {
+        display: inline-block;
+    }
+}
+
+.product_item_img {
+    width: 140px;
+    height: 152px;
+    margin-bottom: 8px;
+
+    @media screen and (min-width:1200px) {
+        width: 266px;
+        height: 288px;
+    }
+}
+
+.product_availability {
+    display: flex;
+    justify-content: space-between;
+    gap: 22px;
+}
+
+.availability_text {
+    color: #706E6E;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+    white-space: nowrap;
+
+    &::before {
+        content :"";
+        background-image: url("../img/greendot.svg");
+        background-repeat:no-repeat;
+        background-size: cover;
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        margin-right: 5px;
+    }
+}
+
+.guarantee {
+    color:  #706E6E;
+    text-align: right;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.product_price {
+    padding-top: 8px;
+    padding-bottom: 12px;
+    display: flex;
+    align-items:center;
+    padding-left: 20px;
+}
+.old_price {
+    color:  #878787;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: line-through;
+    margin-right: 16px;
+    white-space: nowrap;
+
+  
+}
+.add_to_cart {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 8px;
+    background:  #0071E4;
+    padding: 9px;
+    display: flex;
+    
+
+    &::after {
+        content :"";
+        background-image: url("../img/basket_btn.svg");
+        background-repeat:no-repeat;
+        background-size: cover;
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-left: 8px;
+    }
+    @media screen and (min-width:1200px) {
+        color: #100E0E;
+        font-size: 32px;
+        font-weight: 500;
+        line-height: normal;
+        background-color:transparent;
+        padding: 0px;
+        white-space: nowrap;
+
+    }
+}
+.add_to_cart_web {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 8px;
+    background:  #0071E4;
+    padding: 9px 60px;
+    display: none;
+
+    &::after {
+        content :"";
+        background-image: url("../img/basket_btn.svg");
+        background-repeat:no-repeat;
+        background-size: cover;
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-left: 8px;
+    }
+    @media screen and (min-width:1200px) {
+        display: flex;
+    }
+}
+.deals_text {
+    color:  #0071E4;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+    margin-right: 39px;
+}
+
+.instant_buy {
+    color: #706E6E;
+    text-align: right;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+}

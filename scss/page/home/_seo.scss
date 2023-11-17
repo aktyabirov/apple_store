@@ -1,0 +1,133 @@
+.middle_advertisement {
+    background-color: #000;
+}
+
+.middle_container {
+    display: flex;
+
+}
+.middle_content {
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 20px;
+
+  
+    
+}
+.middle_img {
+    width: 65px;
+    height: 163px;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+.middle_title {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.middle_subtitle {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.middle_btn {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 8px;
+    background:  #0071E4;
+    padding: 10px 20px;
+}
+
+
+.seo_title {
+    padding-top: 16px;
+    color: #100E0E;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: normal;
+    padding-bottom: 8px;
+}
+.seo_text {
+    color:  #585656;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.middle_img_crop {
+    display: none;
+   }
+
+
+@media screen and (min-width:768px) {
+   .seo_content {
+        padding-top: 32px;
+        padding-bottom:  32px;
+   }
+
+   .middle_img {
+    width: 110px;
+    height: 276px;
+    margin-left: 40px;
+   }
+
+   .middle_title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: normal;
+   }
+
+   .middle_content {
+    padding-top: 50px;
+    padding-left: 72px;
+   }
+
+   .middle_btn { 
+    padding: 20px 5px;
+   }
+
+   .middle_img_crop {
+    display: none;
+   }
+}
+
+@media screen and (min-width:1200px) {
+
+    .middle_img {
+        display: none;
+    }
+
+    .middle_img_crop {
+        display: inline-block;
+        width: 216px;
+        height: 290px;
+    }
+
+    .middle_title {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: normal;
+    }
+    .middle_subtitle {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: normal;
+    padding-bottom: 16px;
+    }
+
+    .middle_btn { 
+        padding: 20px 5px;
+        max-width: 160px;
+       }
+}
